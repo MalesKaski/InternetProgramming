@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #ffefe2;
 }
 
 a:link {
@@ -9,4 +9,20 @@ a:visited {
 }
 
 a:hover {
+}
+
+#header {
+	background-color: #ffff00;
+}
+#menu {
+
+}
+#main_content {
+
+}
+#content {
+
+}
+#footer {
+    
 }

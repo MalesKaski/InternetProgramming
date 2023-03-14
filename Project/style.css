@@ -1,43 +1,49 @@
 body {
-    background-color: #ffefe2;
-}
-
-a:link {
-    background-color: #00ffff;
-}
-
-a:visited {
-    background-color: #00ffff;
-}
-
-a:hover {
-    background-color: #00ffff;
+    background-color: #2b2b2b;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #container {
-    width: 600px;
+    background-color: #2b2b2b;
+    min-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #header {
-	background-color: white;
 }
+
+#logo {
+    float: left;
+}
+
+#logo_contact {
+    float: left;
+}
+
 #menu {
-    background-color: greenyellow;
+    clear: both;
+    float: left;
 }
 
 #main_content {
-    background-color: green;
     float: left;
 }
 
 #content {
-    background-color: darkblue;
     float: left;
 }
 
 #footer {
-    background-color: darkgray;
     clear: both;
+    text-align: center;
 }
+
+/* a:link {
+}
+
+a:visited {
+}
+
+a:hover {s
+} */

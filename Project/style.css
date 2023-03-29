@@ -42,7 +42,7 @@ body {
 }
 
 #content_menu {
-    background-color: rgb(135, 135, 135);
+    background-color: #878787;
     clear: both;
     float: left;
     height: 660px;
@@ -66,7 +66,7 @@ body {
 }
 
 #content {
-    background-color: #ffffff;
+    background-color: #878787;
     float: left;
     width: 600px;
     height: 650px;
@@ -89,4 +89,57 @@ body {
     font-weight: 700;
     clear: both;
     text-align: center;
+}
+
+.date_and_title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    height: 24px;
+}
+
+.game_option {
+    width: 125px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.game_option:hover {
+    background-color: #2b2b2b;
+    color: #878787;
+}
+
+.game_button {
+    min-width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px dotted #000000;
+    opacity: 0.8;
+}
+
+.game_button:hover {
+    background-color: #ff6600;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+a:link:hover {
+    text-decoration: none;
+    color: #000000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
 }

@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="utf-8">
     <title>Project</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="timer.js"></script>
 </head>
 
-<body>
-<div id="container">
-    <div id="header">
-        <div id="clock_data_bar">
-            2023 mar 14 12:00
-        </div>
-        <div id="logo">
-            <div id="name_surname">Kamil Maleszko</div>
-            QA Engineer
-        </div>
+<body onload="time();">
+    <div id="container">
+        <div id="header">
+            <div id="clock_data_bar"></div>
+            <a href=index.html alt="About me" style="color: #ffffff">
+                <div id="logo">
+                    <div id="name_surname">
+                        Kamil Maleszko
+                    </div>
+                    QA Engineer
+                </div>
+            </a>
 
-        <div id="logo_contact">
-            In<br>
-            @<br>
-            tel.<br>
+            <div id="logo_contact">
+                In<br>
+                @<br>
+                tel.<br>
+            </div>
+            <div style="clear: both"></div>
         </div>
-        <div style="clear: both"></div>
+        <div style="background-color: #4c4c4c; width: 1000px; min-height: 700px;">
+            <div id="content_menu">
+                <div class="option">
+                    <a href=homework.html alt="homework">Homework</a>
+                </div>
+                <a href=index.html alt="About me">
+                    <div class="option">About me</div>
+                </a>
+                <div class="option">Education</div>
+                <div class="option">Experience</div>
+                <div class="option">Certification</div>
+                <div class="option">Skills</div>
+                <div class="option">Download</div>
+                <div class="option">Contact</div>
+                <div style="clear: both;"></div>
+            </div>
+            <div id="content">
+                About me<br><br>
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor ultrices aliquet. Vestibulum
+                ipsum metus, pulvinar at nunc et, hendrerit placerat turpis. Nam vitae suscipit turpis. Mauris elementum
+                laoreet odio ut placerat. Phasellus fringilla vehicula neque, eu rutrum odio. Proin vitae elit
+                efficitur, vulputate justo sollicitudin, efficitur eros. Proin tellus nibh, sagittis sit amet libero a,
+                eleifend cursus diam. Etiam sit amet ante eu sapien mattis tempor. Donec egestas sapien vitae nisl
+                aliquet hendrerit. Maecenas tempus metus erat, quis tristique lacus euismod non. Proin elementum nisl
+                ex, eget luctus ex scelerisque at. Nullam id mi sit amet neque ornare iaculis quis non ex. Cras
+                convallis non nulla eget vehicula. Duis sed sapien vel lorem dignissim vulputate. Aliquam pharetra enim
+                quam, a posuere nulla lobortis ut. Morbi congue rutrum elementum. <br><br>
+
+                Morbi vulputate auctor eleifend. Mauris consectetur, massa nec gravida eleifend, purus turpis feugiat
+                ipsum, sit amet efficitur neque enim ac arcu. Pellentesque id augue dui. Nunc vitae varius ante. Nulla
+                non leo at nibh luctus facilisis. Mauris iaculis mauris sit amet nulla porttitor pulvinar. Maecenas
+                consequat, felis vel malesuada consectetur, metus risus maximus tortor, non iaculis turpis nisi a
+                orci.<br><br>
+
+                Nulla facilisi. Etiam bibendum vulputate nulla, luctus suscipit ligula. Suspendisse lobortis velit
+                risus, quis sollicitudin nulla ornare vitae. Vivamus efficitur erat vitae felis vulputate, id cursus
+                erat commodo. Nam eu vehicula dui. Mauris quis ligula et orci cursus ultrices. Fusce maximus bibendum
+                ante, at ullamcorper sapien varius dapibus.<br><br>
+
+                Vivamus ornare dui at tortor porta, a volutpat diam elementum. Quisque aliquet interdum elementum.
+                Aenean ut metus ut lorem malesuada lacinia quis vel velit. Etiam vitae metus metus. Donec ante dolor,
+                cursus at gravida nec, venenatis imperdiet felis. Donec molestie sollicitudin enim mollis aliquet. Donec
+                mollis molestie ante. Integer quis neque nec urna euismod vulputate. Suspendisse vel lorem laoreet ante
+                feugiat blandit eget non orci. Nulla semper malesuada turpis a blandit.<br><br>
+            </div>
+            <div id="ad_content">
+                <img src="Jellyfish" alt="Ubuntu Jellyfish" style="width: 170px; height: 690px;">
+            </div>
+        </div>
+        <div id="footer">
+            Kamil Maleszko &copy; All rights reserved.
+        </div>
     </div>
-    <div  style="background-color: #4c4c4c; width: 1000px; min-height: 700px;">
-        <div id="content_menu">
-            <div class="option">About Me</div>
-            <div class="option">Education</div>
-            <div class="option">Experience</div>
-            <div class="option">Certification</div>
-            <div class="option">Skills</div>
-            <div class="option">Download</div>
-            <div class="option">Contact</div>
-            <div style="clear: both;"></div>
-        </div>
-        <div id="content">
-            MAIN_CONTENT<br><br>
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor ultrices aliquet. Vestibulum ipsum metus, pulvinar at nunc et, hendrerit placerat turpis. Nam vitae suscipit turpis. Mauris elementum laoreet odio ut placerat. Phasellus fringilla vehicula neque, eu rutrum odio. Proin vitae elit efficitur, vulputate justo sollicitudin, efficitur eros. Proin tellus nibh, sagittis sit amet libero a, eleifend cursus diam. Etiam sit amet ante eu sapien mattis tempor. Donec egestas sapien vitae nisl aliquet hendrerit. Maecenas tempus metus erat, quis tristique lacus euismod non. Proin elementum nisl ex, eget luctus ex scelerisque at. Nullam id mi sit amet neque ornare iaculis quis non ex. Cras convallis non nulla eget vehicula. Duis sed sapien vel lorem dignissim vulputate. Aliquam pharetra enim quam, a posuere nulla lobortis ut. Morbi congue rutrum elementum. <br><br>
-
-            Morbi vulputate auctor eleifend. Mauris consectetur, massa nec gravida eleifend, purus turpis feugiat ipsum, sit amet efficitur neque enim ac arcu. Pellentesque id augue dui. Nunc vitae varius ante. Nulla non leo at nibh luctus facilisis. Mauris iaculis mauris sit amet nulla porttitor pulvinar. Maecenas consequat, felis vel malesuada consectetur, metus risus maximus tortor, non iaculis turpis nisi a orci.<br><br>
-
-            Nulla facilisi. Etiam bibendum vulputate nulla, luctus suscipit ligula. Suspendisse lobortis velit risus, quis sollicitudin nulla ornare vitae. Vivamus efficitur erat vitae felis vulputate, id cursus erat commodo. Nam eu vehicula dui. Mauris quis ligula et orci cursus ultrices. Fusce maximus bibendum ante, at ullamcorper sapien varius dapibus.<br><br>
-
-            Vivamus ornare dui at tortor porta, a volutpat diam elementum. Quisque aliquet interdum elementum. Aenean ut metus ut lorem malesuada lacinia quis vel velit. Etiam vitae metus metus. Donec ante dolor, cursus at gravida nec, venenatis imperdiet felis. Donec molestie sollicitudin enim mollis aliquet. Donec mollis molestie ante. Integer quis neque nec urna euismod vulputate. Suspendisse vel lorem laoreet ante feugiat blandit eget non orci. Nulla semper malesuada turpis a blandit.<br><br>
-        </div>
-        <div id="ad_content">
-            <img src="Jellyfish" alt="Ubuntu Jellyfish" style="width: 170px; height: 690px;">
-        </div>
-    </div>
-    <div id="footer">
-		Kamil Maleszko &copy; Wszelkie prawa zastrzeżone.
-	</div>
-</div>
 </body>
+
 </html>

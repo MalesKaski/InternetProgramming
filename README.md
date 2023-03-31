@@ -2,22 +2,23 @@
 
 https://maleskaski.github.io/InternetProgramming/Project/
 
-Pierwsza strona
-Termin: 17 marca 2023 23:59Kończy się 18 marca 2023 11:00
+JavaScript
+
 Instrukcje
-W ramach niniejszego zadania należy:
- - znaleźć dowolny, darmowy hosting
- - przygotować layout strony, zgodnie z poniższymi wymaganiami
+W ramach zadania należy przygotować z wykorzystaniem języka JavaScript grę, która zostanie umieszczona na stronie. Może być to ta sama strona co w poprzednim zadaniu, lub nowa, przygotowana konkretnie pod to ćwiczenie. Do wyboru są następujące gry:
+ - Kółko i krzyżyk w dwóch wersjach: z jednym i dwoma graczami (wersja z jednym graczem wymaga oprogramowania przeciwnika komputerowego)
+ - Memory: z jednym lub dwoma graczami (analogicznie jak kółko i krzyżyk)
+ - Puzzle: dowolny wariant, gra musi rozpoznawać kiedy obrazek został ułożony.
 
-Wymagania strony:
-Strona powinna być wykonana w czystym HTML5 i CSS3 (bez żadnych dodatkowych bibliotek, etc. - obecność takiego elementu oznacza automatyczne 0).
-Strona powinna być interesująca wizualnie - nie musi mieć konkretnej zawartości, layout powinien jednak być czytelny i zachęcający do dalszego przeglądania. Minimalna zawartość: fragment dowolnego tekstu (np. lorem ipsum), obrazek, placeholder na elementy menu.
-Wymagana jest pełna zgodność ze standardem w3c dla HTML5 i CSS3.
-Strona musi być dostępna online. Podczas wybierania hostingu proszę wziąć pod uwagę fakt iż docelowo powinny znaleźć się na niej co najmniej kolejne prace domowe powiązane z tematami wykładów (proszę zerknąć np. na tematykę zajęć i przykładowe konfiguracje serwerów z wykładów).
+Wymagania:
+ - Wymagana zgodność z przeglądarkami desktopowymi (Chrome, Firefox, Opera, Edge)
+ - NIE można używać HTML canvas
+ - NIE można używać biblioteki jQuery
+ - Strona musi się walidować (W3C dla CSS3 i HTML5)
+ - GtMetrix – Performance i Structure na poziomie jasnozielonym. (https://gtmetrix.com/)
 
-W ramach zadania należy przekazać działający link do strony.
-
-Elementy oceniane:
- - HTML5 (kod, błędy)
- - CSS3 (kod, błędy)
- - Layout strony
+Elementy Oceniane
+ - HTML i CSS
+ - Ogólny performance strony
+ - Zgodność z wymienionymi przeglądarkami
+ - Wykonanie gry (płynność działania, ewentualne błędy, kod)

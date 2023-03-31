@@ -123,7 +123,7 @@ function check(nr) {
         document.getElementById("alphabet").style.color = "#00a100";
         document.getElementById("alphabet").style.background = "#003300";
         document.getElementById("alphabet").style.border = "3px solid #00C000";
-        document.getElementById("alphabet").innerHTML = 'YOU WIN!<br/><input type="button" value="TRY AGAIN?" onclick="location.reload()"></input>';
+        document.getElementById("alphabet").innerHTML = 'YOU WIN!<br/><input type="button" value="New Password?" onclick="location.reload()"></input>';
     }
 
     if (mis_shot >= 9) {

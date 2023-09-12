@@ -3,82 +3,78 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-    <link rel="stylesheet" href="style/style.css" type="text/css" />
-    <script type="text/javascript" src="script/timer.js"></script>
+    <link rel="stylesheet" href="style/style.css" type="text/css"/>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body onload="time();">
-    <div id="container">
-        <div id="header">
-            <div id="clock_data_bar">2023 Mar 14 | 12:00:00</div>
-            <a href=index.html alt="About me" style="color: #ffffff">
-                <div id="logo">
-                    <div id="name_surname">
-                        Kamil Maleszko
-                    </div>
-                    QA Engineer
-                </div>
-            </a>
+<body>
+    <header class="header">
+        <a href="#", class="logo">QSoftware</a>
 
-            <div id="logo_contact">
-                In: <a href="https://www.linkedin.com/in/kamil-maleszko-045ab9205/" alt="Kamil Maleszko - LinkedIn" style="color: #ffffff;">Visit my LinkedIn</a><br>
-                @: kontakt@kmaleszko.pl<br>
-                tel.: +48 503148227<br>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Kamil Maleszko</span></h1>
+            <div class="text-animate">
+                <h3>QA Engineer</h3>
             </div>
-            <div style="clear: both"></div>
-        </div>
-        <div style="background-color: #4c4c4c; width: 1000px; min-height: 700px;">
-            <div id="content_menu">
-                <a href=index.html alt="About me">
-                    <div class="option">About me</div>
-                </a>
-                <div class="option">Education</div>
-                <div class="option">Experience</div>
-                <div class="option">Certification</div>
-                <div class="option">Skills</div>
-                <div class="option">Download</div>
-                <div class="option">Contact</div>
-                <div style="clear: both;"></div>
-            </div>
-            <div id="content">
-                About me<br><br>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor ultrices aliquet. Vestibulum
-                ipsum metus, pulvinar at nunc et, hendrerit placerat turpis. Nam vitae suscipit turpis. Mauris elementum
-                laoreet odio ut placerat. Phasellus fringilla vehicula neque, eu rutrum odio. Proin vitae elit
-                efficitur, vulputate justo sollicitudin, efficitur eros. Proin tellus nibh, sagittis sit amet libero a,
-                eleifend cursus diam. Etiam sit amet ante eu sapien mattis tempor. Donec egestas sapien vitae nisl
-                aliquet hendrerit. Maecenas tempus metus erat, quis tristique lacus euismod non. Proin elementum nisl
-                ex, eget luctus ex scelerisque at. Nullam id mi sit amet neque ornare iaculis quis non ex. Cras
-                convallis non nulla eget vehicula. Duis sed sapien vel lorem dignissim vulputate. Aliquam pharetra enim
-                quam, a posuere nulla lobortis ut. Morbi congue rutrum elementum. <br><br>
-
-                Morbi vulputate auctor eleifend. Mauris consectetur, massa nec gravida eleifend, purus turpis feugiat
-                ipsum, sit amet efficitur neque enim ac arcu. Pellentesque id augue dui. Nunc vitae varius ante. Nulla
-                non leo at nibh luctus facilisis. Mauris iaculis mauris sit amet nulla porttitor pulvinar. Maecenas
-                consequat, felis vel malesuada consectetur, metus risus maximus tortor, non iaculis turpis nisi a
-                orci.<br><br>
-
-                Nulla facilisi. Etiam bibendum vulputate nulla, luctus suscipit ligula. Suspendisse lobortis velit
-                risus, quis sollicitudin nulla ornare vitae. Vivamus efficitur erat vitae felis vulputate, id cursus
-                erat commodo. Nam eu vehicula dui. Mauris quis ligula et orci cursus ultrices. Fusce maximus bibendum
-                ante, at ullamcorper sapien varius dapibus.<br><br>
-
-                Vivamus ornare dui at tortor porta, a volutpat diam elementum. Quisque aliquet interdum elementum.
-                Aenean ut metus ut lorem malesuada lacinia quis vel velit. Etiam vitae metus metus. Donec ante dolor,
-                cursus at gravida nec, venenatis imperdiet felis. Donec molestie sollicitudin enim mollis aliquet. Donec
-                mollis molestie ante. Integer quis neque nec urna euismod vulputate. Suspendisse vel lorem laoreet ante
-                feugiat blandit eget non orci. Nulla semper malesuada turpis a blandit.<br><br>
-            </div>
-            <div id="ad_content">
-                <img src="img/Jellyfish" alt="Ubuntu Jellyfish" style="width: 170px; height: 690px;">
+            <div class="btn-box">
+                <a href="#" class="btn">Hire me</a>
+                <a href="#" class="btn">Let's Talk</a>
             </div>
         </div>
-        <div id="footer">
-            Kamil Maleszko &copy; All rights reserved.
+            
+        <div class="home-sci">
+            <a href="#" class=""><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class=""><i class='bx bxl-linkedin' ></i></a>
+            <a href="#" class=""><i class='bx bxs-envelope' ></i></a>
+            <a href="#" class=""><i class='bx bx-mobile-alt' ></i></a>
         </div>
-    </div>
+
+        <div class="home-imgHover"></div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="/Project/img/Mountain.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>QA Engineer</h3>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <div class="btn-box btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
 </body>
-
 </html>

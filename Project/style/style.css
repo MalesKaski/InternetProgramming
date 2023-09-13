@@ -83,14 +83,14 @@ body {
     font-size: 1.7rem;
     color: var(--text-color);
     cursor: pointer;
-    margin: 3.5rem;
+    margin-left: 3.5rem;
 }
 
 #darkMode-icon {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     cursor: pointer;
-    margin: 1rem;
+    margin: 3.5rem;
 }
 
 section {

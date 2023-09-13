@@ -1,8 +1,8 @@
 import './App.css';
 import { Helmet } from "react-helmet"
+import Home1 from './components/Home1';
 
 function App() {
-
   return (
     <>
       <Helmet>
@@ -242,6 +242,6 @@ function App() {
     </div>
     </>
   );
-}
+ }
 
 export default App;

@@ -43,12 +43,14 @@ darkModeIcon.onclick = () => {
 	document.body.classList.toggle('dark-mode');
 }
 
-// dark / light mode
+// pl/en mode
 let languageIcon = document.querySelector('#language-icon');
 languageIcon.onclick = () => {
 	if(languageIcon.innerHTML == "pl") {
 		languageIcon.innerHTML = "en";
+		// handleChangeLanguage("pl");
 	} else {
 		languageIcon.innerHTML = "pl";
+		// handleChangeLanguage("en");
 	}
 }

@@ -1,62 +1,54 @@
-function time() {
-	var today = new Date();
+// toggle icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-	var day = today.getDate();
-	var year = today.getFullYear();
-	
-	var month;
+menuIcon.onclick = () => {
+	menuIcon.classList.toggle('bx-x');
+	navbar.classList.toggle('active');
+}
 
-	switch (today.getMonth()) {
-		case 0:
-			month = "Jan";
-			break;
-		case 1:
-			month = "Feb";
-			break;
-		case 2:
-			month = "Mar";
-			break;
-		case 3:
-			month = "Apr";
-			break;
-		case 4:
-			month = "May";
-			break;
-		case 5:
-			month = "Jun";
-			break;
-		case 6:
-			month = "Jul";
-			break;
-		case 7:
-			month = "Aug";
-			break;
-		case 8:
-			month = "Sep";
-			break;
-		case 9:
-			month = "Oct";
-			break;
-		case 10:
-			month = "Nov";
-			break;
-		case 11:
-			month = "Dec";
-			break;
-		default:
-			month = "Wrong entry data";
+//scroll sections
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.onscroll = () => {
+	sections.forEach(sec => {
+		let top = window.scrollY;
+		let offset = sec.offsetTop - 100;
+		let height = sec.offsetHeight;
+		let id = sec.getAttribute('id');
+
+		if(top >= offset && top < offset + height) {
+			// active navbar links
+			navLinks.forEach(links => {
+				links.classList.remove('active');
+				document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+			});
+		}
+	});
+	let header = document.querySelector('header');
+
+	header.classList.toggle('sticky', window.scrollY > 100);
+
+	// remove toggle icon and navbar when click navbar links (scroll)
+
+	menuIcon.classList.remove('bx-x');
+	navbar.classList.remove('active');
+}
+
+// dark / light mode
+let darkModeIcon = document.querySelector('#darkMode-icon');
+darkModeIcon.onclick = () => {
+	darkModeIcon.classList.toggle('bx-sun');
+	document.body.classList.toggle('dark-mode');
+}
+
+// dark / light mode
+let languageIcon = document.querySelector('#language-icon');
+languageIcon.onclick = () => {
+	if(languageIcon.innerHTML == "pl") {
+		languageIcon.innerHTML = "en";
+	} else {
+		languageIcon.innerHTML = "pl";
 	}
-
-	var hour = today.getHours();
-	if (hour < 10) hour = "0" + hour;
-
-	var minute = today.getMinutes();
-	if (minute < 10) minute = "0" + minute;
-
-	var second = today.getSeconds();
-	if (second < 10) second = "0" + second;
-
-	document.getElementById("clock_data_bar").innerHTML = year + " " + month + " " + day + " | " + hour + ":" + minute + ":" + second;
-
-	setTimeout("time()", 1000);
 }
